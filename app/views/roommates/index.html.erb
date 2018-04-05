@@ -1,0 +1,93 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Roommates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Zipcode</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Min perferr age</th>
+      <th>Max pref age</th>
+      <th>Gender</th>
+      <th>Gender pref</th>
+      <th>Language</th>
+      <th>Desire date</th>
+      <th>Look for</th>
+      <th>Spend</th>
+      <th>Lease type</th>
+      <th>Bedroom share</th>
+      <th>Room look</th>
+      <th>Cleanlines</th>
+      <th>Pets</th>
+      <th>Roommates pets</th>
+      <th>Smoker</th>
+      <th>Roommate smoke</th>
+      <th>Often guests</th>
+      <th>Roommate guests</th>
+      <th>Roommate friend</th>
+      <th>Student</th>
+      <th>Job</th>
+      <th>Wake up</th>
+      <th>Sleep time</th>
+      <th>Roommate same sch</th>
+      <th>Daily routine</th>
+      <th>Triggers</th>
+      <th>Description</th>
+      <th>Roommate looking for</th>
+      <th>Clarify</th>
+      <th>Forget something</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @roommates.each do |roommate| %>
+      <tr>
+        <td><%= roommate.email %></td>
+        <td><%= roommate.zipcode %></td>
+        <td><%= roommate.name %></td>
+        <td><%= roommate.age %></td>
+        <td><%= roommate.min_perferr_age %></td>
+        <td><%= roommate.max_pref_age %></td>
+        <td><%= roommate.gender %></td>
+        <td><%= roommate.gender_pref %></td>
+        <td><%= roommate.language %></td>
+        <td><%= roommate.desire_date %></td>
+        <td><%= roommate.look_for %></td>
+        <td><%= roommate.spend %></td>
+        <td><%= roommate.lease_type %></td>
+        <td><%= roommate.bedroom_share %></td>
+        <td><%= roommate.room_look %></td>
+        <td><%= roommate.cleanlines %></td>
+        <td><%= roommate.pets %></td>
+        <td><%= roommate.roommates_pets %></td>
+        <td><%= roommate.smoker %></td>
+        <td><%= roommate.roommate_smoke %></td>
+        <td><%= roommate.often_guests %></td>
+        <td><%= roommate.roommate_guests %></td>
+        <td><%= roommate.roommate_friend %></td>
+        <td><%= roommate.student %></td>
+        <td><%= roommate.job %></td>
+        <td><%= roommate.wake_up %></td>
+        <td><%= roommate.sleep_time %></td>
+        <td><%= roommate.roommate_same_sch %></td>
+        <td><%= roommate.daily_routine %></td>
+        <td><%= roommate.triggers %></td>
+        <td><%= roommate.description %></td>
+        <td><%= roommate.roommate_looking_for %></td>
+        <td><%= roommate.clarify %></td>
+        <td><%= roommate.forget_something %></td>
+        <td><%= link_to 'Show', roommate %></td>
+        <td><%= link_to 'Edit', edit_roommate_path(roommate) %></td>
+        <td><%= link_to 'Destroy', roommate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Roommate', new_roommate_path %>

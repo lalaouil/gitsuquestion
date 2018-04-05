@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Muli:700,900" rel="stylesheet" type="text/css">
+	<title>GetsYouInc - ASD Connections</title>
+</head>
+
+<body>
+	<container>
+	    <header>
+		    <!--<img src="assets/getsYouMainLogo.png" alt="Logo of 8 figures standing in a circle holding hands inward to form a star. Titled, 'Gets You Inc.' Tagline, 'Connecting you with someone that gets you.'" width="100%">-->
+        </header>
+		<div>
+	      <!--<h1>Subscibe to our newsletter!</h1>
+		    <h2>Our newsletter will keep you informed of our progress, include relevent articles for the community, and when we're ready to launch, you'll receive your code for <span>3 FREE MONTHS</span> of membership to Gets You Inc.</h2>-->
+		</div>
+		<div>
+           <%= form_for(questions) do |f| %>
+				<div>
+					<%= f.label :email %>
+					<%= f.text_field :email %>
+				<div>
+				    <%= f.label :first_name %>
+				    <%= f.text_field :first_name %>
+				</div>
+				<div>
+					<%= f.label :last_name %>
+					<%= f.text_field :last_name %>
+				</div>
+				<div>
+					<div>
+						<%= f.label :child_first_name %>
+						<%= f.text_field :child_first_name %>
+					</div>
+					<div>
+						<div>
+							<%= f.label :child_last_name %>
+							<%= f.text_field :child_last_name %>
+						</div>
+							<div>
+								<%= f.label :child_age %>
+								<%= f.text_field :child_age %>
+							</div>
+								<div>
+									<%= f.label :child_gender %>
+									<%= f.select :child_gender, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :child_style %>
+									<%= f.text_field :child_style %>
+								</div>
+								<div>
+									<%= f.label :prefer_playmate %>
+									<%= f.select :prefer_playmate, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :avoid_sensory_stimulation %>
+									<%= f.select :avoid_sensory_stimulation, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :seek_sensory_stimulation %>
+									<%= f.select :seek_sensory_stimulation, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :general_description_child %><br />
+									<%= f.text_area(:general_description_child, size: '50x10') %>
+								</div>
+								<div>
+									<%= f.label :looking_for_in_playdate %><br />
+									<%= f.text_area(:looking_for_in_playdate, size: '50x10') %>
+								</div>
+								<div>
+									<%= f.label :type_communication %>
+									<%= f.select :type_communication, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :best_fit %>
+									<%= f.select :best_fit, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :self_inj_behavior %>
+									<%= f.text_field :self_inj_behavior %>
+								</div>
+								<div>
+									<%= f.label :behavior %>
+									<%= f.select :behavior, ['option1', 'option2']%>
+								</div>
+								<div>
+									<%= f.label :aggression %>
+									<%= f.text_field :aggression %>
+								</div>
+								<div>
+									<%= f.label :agg_behavior_approve %>
+									<%= f.radio_button :agg_behavior_approve, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :property_destruetion %>
+									<%= f.text_field :property_destruetion %>
+								</div>
+								<div>
+									<%= f.label :property_destruction_approve %>
+									<%= f.radio_button :property_destruction_approve, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :routine_oriented %>
+									<%= f.text_field :routine_oriented %>
+								</div>
+								<div>
+									<%= f.label :routine_oriented_approved %>
+									<%= f.text_field :routine_oriented_approved %>
+								</div>
+								<div>
+									<%= f.label :rule_oriented %>
+									<%= f.text_field :rule_oriented %>
+								</div>
+								<div>
+									<%= f.label :rule_oriented_approved %>
+									<%= f.radio_button :rule_oriented_approved, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :compliance_protesting %>
+									<%= f.text_field :compliance_protesting %>
+								</div>
+								<div>
+									<%= f.label :compliance_protesting_approved %>
+									<%= f.radio_button :comliance_protesting_approved, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :elopement %>
+									<%= f.text_field :elopement %>
+								</div>
+								<div>
+									<%= f.label :elopement_approved %>
+									<%= f.radio_button :elopement_approved, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :inappropriate_attention %>
+									<%= f.text_field :inappropriate_attention %>
+								</div>
+								<div>
+									<%= f.label :inappropriate_attention_approved %>
+									<%= f.radio_button :inappropriate_attention_approved, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :sharing %>
+									<%= f.text_field :sharing %>
+								</div>
+								<div>
+									<%= f.label :sharing_approved %>
+									<%= f.radio_button :sharing_approved, 'yes' %>
+								</div>
+								<div>
+									<%= f.label :favorite_activities %>
+									<%= f.select :favorite_activities, ['option1', 'option2']%>
+								</div>
+				<div>
+				    <input type="submit" value="Submit">
+				</div>
+				<div>
+					<!--<a href="http://getsyouinc.com" class="back">Back</a>-->
+				</div>
+            <% end %>
+
+		</div>
+		<div>
+		    <!--<p>Footer Space ************************************ </p>-->
+		</div>
+	</container>
+</body>
+</html>

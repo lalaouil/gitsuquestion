@@ -1,0 +1,166 @@
+* --------------------------------
+
+ Header
+
+--------------------------------- */
+
+container {
+	display: block;
+	margin: auto;
+	max-width: 400px;
+}
+img{
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	padding-top: 50px;
+	width: 95%;
+
+}
+h1 {
+    font-family: Muli, sans-serif;
+    font-size: 1.8em;
+    color: #9966ff;
+    display: block;
+	line-height: 150%;
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+}
+
+h2 {
+	font-family: Muli, sans-serif;
+    font-size: 1em;
+    color: #10428c;
+    display: block;
+    width: 95%;
+    margin: auto;
+    padding: 5px 0;
+	line-height: 125%
+}
+h2 span {
+	color: #45b83c;
+}
+/* ----------------------------------
+
+Form
+
+------------------------------------*/
+input[type=email], input[type=text] {
+	width: 90%;
+	padding: 15px;
+	margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #10428c;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+input[type=submit] {
+	width: 100%;
+	padding: 15px;
+    background: #45b83c;
+    color: #fff;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 1.2em;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+input[type=submit]:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+form {
+    font-family: Muli, sans-serif;
+	color: #10428c;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+	padding: 10px;
+    margin: auto;
+    width: 90%;
+	margin-bottom: 10px;
+}
+
+a:link {
+    color: #45b83c ;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: #7ed378 ;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+p {
+	font-family: Muli, sans-serif;
+	font-size: 0.8em;
+	color: #10428c;
+	margin: auto;
+	line-height: 125%;
+	width: 95%;
+}
+
+.title h1 {
+	font-family: Muli, sans-serif;
+	font-size: 3.8em;
+	color: #45b83c;
+}
+
+.thanks h2 {
+	font-size: 1.4em;
+    color: #9966ff;
+	line-height: 120%;
+	margin: auto;
+}
+
+.thanks p {
+	font-size: 1em;
+	line-height: 150%;
+	margin: 20px auto;
+}
+
+
+
+.back {
+  font-family: Muli, sans-serif;
+  background: #45b83c;
+  border-radius: 0.3rem;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: auto;
+  width: 50%;
+  height: 20px;
+  padding: 12px
+ }
+
+ .button {
+ font-family: Muli, sans-serif;
+ background-color: #45b83c;
+ border-radius: 0.2rem;
+ border: none;
+ color: #fff;
+ text-align: center;
+ text-decoration: none;
+ display: block;
+ font-size: 16px;
+ cursor: pointer;
+ margin: auto;
+ width: 50%;
+ padding: 12px 30px;
+}
+
+.button:hover {
+   background-color: #7ed378;
+   color: #fff;
+}

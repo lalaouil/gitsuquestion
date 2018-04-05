@@ -1,0 +1,127 @@
+<%= form_for(friend) do |f| %>
+  <% if friend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+
+      <ul>
+      <% friend.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zipcode %>
+    <%= f.text_field :zipcode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Minimum perferred age of friend' %>
+    <%= f.text_field :min_perferr_age %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Maximum perferred age of friend' %>
+    <%= f.text_field :max_pref_age %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Your gender' %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What gender do you prefer in a friend?' %>
+    <%= f.text_field :gender_pref %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you require any support in your day to day life?' %>
+    <%= f.text_field :support %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'How important is it that your friend have the same level of independence as you?' %>
+    <%= f.text_field :friend_level %>
+  </div>
+
+  <div class="field">
+    <%= f.label :look_for %>
+    <%= f.text_field :look_for %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What is the primary languauage spoken in your home?' %>
+    <%= f.text_field :languauage %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you prefer scheduled or spontanecus activities' %>
+    <%= f.text_field :scheduled %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What are you looking for in a friend' %>
+    <%= f.text_field :look_friend %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What are some of your interests?' %>
+    <%= f.text_field :interests %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you a student? if so where are you studying' %>
+    <%= f.text_field :student %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you work? if so where? What do you do?' %>
+    <%= f.text_field :job %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you have specific daily routines? If so, tell us about them' %>
+    <%= f.text_field :daily_routine %>
+  </div>
+
+  <div class="field">
+    <%= f.label :triggers %>
+    <%= f.text_field :triggers %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Give us a general description of yourself to send to future friends (tell us about who you are, your personality, what makes you unique, etc)' %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'If you feel the need to clarifty any of your answes please do so here:' %>
+    <%= f.text_field :clarify %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Did we forget something? Please tell us any important information we may have forgotton to ask about' %>
+    <%= f.text_field :forget_something %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

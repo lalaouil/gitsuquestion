@@ -1,0 +1,49 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  zipcode: MyString
+  name: MyString
+  age: MyString
+  min_perferr_age: MyString
+  max_pref_age: MyString
+  gender: MyString
+  gender_pref: MyString
+  support: MyString
+  friend_level: MyString
+  look_for: MyString
+  languauage: MyString
+  scheduled: MyString
+  look_friend: MyString
+  interests: MyString
+  student: MyString
+  job: MyString
+  daily_routine: MyString
+  triggers: MyString
+  description: MyString
+  clarify: MyString
+  forget_something: MyString
+
+two:
+  email: MyString
+  zipcode: MyString
+  name: MyString
+  age: MyString
+  min_perferr_age: MyString
+  max_pref_age: MyString
+  gender: MyString
+  gender_pref: MyString
+  support: MyString
+  friend_level: MyString
+  look_for: MyString
+  languauage: MyString
+  scheduled: MyString
+  look_friend: MyString
+  interests: MyString
+  student: MyString
+  job: MyString
+  daily_routine: MyString
+  triggers: MyString
+  description: MyString
+  clarify: MyString
+  forget_something: MyString

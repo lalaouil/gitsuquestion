@@ -1,0 +1,187 @@
+<%= form_for(roommate) do |f| %>
+  <% if roommate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(roommate.errors.count, "error") %> prohibited this roommate from being saved:</h2>
+
+      <ul>
+      <% roommate.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :zipcode %>
+    <%= f.text_field :zipcode %>
+  </div>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Minimum preferred age of roommate' %>
+    <%= f.text_field :min_perferr_age %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Maximum preferred age of roommate' %>
+    <%= f.text_field :max_pref_age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :gender %>
+    <%= f.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What gender do you prefer in a roommate?' %>
+    <%= f.text_field :gender_pref %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What is the primary language spoken in your home?' %>
+    <%= f.text_field :language %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Desired move in date' %>
+    <%= f.text_field :desire_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'I am looking for' %>
+    <%= f.text_field :look_for %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'How much are you wanting to spend on rent?' %>
+    <%= f.text_field :spend %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What type of lease are you looking for?' %>
+    <%= f.text_field :lease_type %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you open to sharing a bedroom?' %>
+    <%= f.text_field :bedroom_share %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'How does your home/room typically look?' %>
+    <%= f.text_field :room_look %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'How important is it that your roommate be on par with your cleanliness level?' %>
+    <%= f.text_field :cleanlines %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you have pets? if so, which one(s)?' %>
+    <%= f.text_field :pets %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you ok with a roommate with any of the following pets?' %>
+    <%= f.text_field :roommates_pets %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you a smoker? if so, where do you smoke?' %>
+    <%= f.text_field :smoker %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you ok with a roommate who smokes? if so, under what circumstances?' %>
+    <%= f.text_field :roommate_smoke %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'How often do you have guest over?' %>
+    <%= f.text_field :often_guests %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'How do you feel about your roommate having guests over?' %>
+    <%= f.text_field :roommate_guests %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you looking for a roommate you can call your frien or just a living situation' %>
+    <%= f.text_field :roommate_friend %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Are you a student? if so,where? What are you studying?' %>
+    <%= f.text_field :student %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you have a job? if so, where? What do you do?' %>
+    <%= f.text_field :job %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'When do you typically wake up?' %>
+    <%= f.text_field :wake_up %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'When do you typically sleep?' %>
+    <%= f.text_field :sleep_time %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you prefer a roommate with a simi' %>
+    <%= f.text_field :roommate_same_sch %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you have specific daily routines? if so, tell us about them' %>
+    <%= f.text_field :daily_routine %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Do you have any know triggers (sensory, environmental,etc.), and if so what are they?' %>
+    <%= f.text_field :triggers %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Give us a general description of yourself to send to future roommates(tell us about who you are, your personality, what makes you unique, etc)' %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'What are you looking for in a roommate?' %>
+    <%= f.text_field :roommate_looking_for %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'If you feel the need to clarify any of your answers please do so here:' %>
+    <%= f.text_field :clarify %>
+  </div>
+
+  <div class="field">
+    <%= f.label 'Did we forget something? Please tell us any important information we may have forgotten to ask about' %>
+    <%= f.text_field :forget_something %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
